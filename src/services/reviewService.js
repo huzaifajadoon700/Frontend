@@ -1,7 +1,7 @@
 // services/reviewService.js
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/reviews"; // Assuming your reviews route is at /review
+const API_URL = "https://backend1-api.vercel.app"; // Assuming your reviews route is at /review
 
 const reviewService = {
   getAllReviews: async () => {
