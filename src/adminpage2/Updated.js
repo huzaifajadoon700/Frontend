@@ -23,7 +23,7 @@ function Updated() {
   
     const setProduct = async () => {
       try {
-        let result = await fetch(`http://localhost:8000/update/${params.productId}`);
+        let result = await fetch(`https://backend1-api.vercel.app/${params.productId}`);
         result = await result.json();
         setTitle(result.title);
         setBrand(result.description);
