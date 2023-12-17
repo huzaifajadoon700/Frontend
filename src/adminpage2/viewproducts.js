@@ -77,7 +77,7 @@ function View() {
                   <td>
                     <img
                       style={{ maxWidth: "50px", maxHeight: "50px" }}
-                      src={`http://localhost:8000/${details.productImage}`}
+                      src={`https://backend1-api.vercel.app/${details.productImage}`}
                       alt={`Product ${details.title}`}
                     />
                   </td>
