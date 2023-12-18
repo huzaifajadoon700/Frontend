@@ -41,7 +41,7 @@ function Carousel() {
             {itemsInSlide.map((card) => (
               <div className="card" style={{ width: "20rem" }} key={card.id}>
                 <img
-                  src={`https://backend1-api.vercel.app/${card.productImage}`}
+                  src={`https://deploy-frontend-eight.vercel.app/viewproducts/${card.productImage}`}
                   alt={card.title}
                 />
                 <div className="card-body">
