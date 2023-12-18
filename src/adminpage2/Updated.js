@@ -47,20 +47,20 @@ function Updated() {
         formData.append("description", updatedData.description);
         formData.append("price", updatedData.price);
         formData.append("productImage", productImage);
-    
-        let result = await fetch(`http://localhost:8000/update/${params.productId}`, {
-          method: 'PUT',
-          body: formData,
-        });
-    
-        result = await result.json();
-        if (result) {
-          console.log("Product updated successfully!");
-        }
-      } catch (error) {
-        console.error("Error updating product:", error.message);
+          
+       let result = await fetch(`${backendUrl}/update/${params.productId}`, {
+        method: 'PUT',
+        body: formData,
+      });
+
+      result = await result.json();
+      if (result) {
+        console.log("Product updated successfully!");
       }
-    };
+    } catch (error) {
+      console.error("Error updating product:", error.message);
+    }
+  };
     
     return (
   <div >
