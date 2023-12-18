@@ -9,7 +9,7 @@ function Carousel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetch("https://backend1-api.vercel.app/viewproducts");
+        const result = await fetch("https://deploy-frontend-eight.vercel.app/viewproducts");
         const data = await result.json();
         setdatadb(data);
       } catch (error) {
