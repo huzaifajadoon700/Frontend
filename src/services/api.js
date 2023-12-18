@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const url = "https://backend1-api.vercel.app";
+const url = "http://localhost:8000";
 
 
 
 export const addproduct =async (productdata)=>{
     console.log(productdata);
- return await axios.post(`https://backend1-api.vercel.app/shoes`,productdata);
+ return await axios.post(`${url}/shoes`,productdata);
  }
 export const addsignup =async (signupdata)=>{
     console.log(signupdata);
@@ -20,7 +20,7 @@ return await axios.post(`${url}/checkout`,checkouttdata);
 
 
 export const getshoes= async ()=>{
-return await axios.get(`https://backend1-api.vercel.app/viewproducts`)
+return await axios.get(`${url}/viewproducts`)
 }
 
 export const deleteShoe = async (productId) => {
