@@ -9,7 +9,7 @@ function Carousel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetch("http://localhost:8000/viewproducts");
+        const result = await fetch("https://backend1-api.vercel.app/viewproducts");
         const data = await result.json();
         setdatadb(data);
       } catch (error) {
@@ -41,7 +41,7 @@ function Carousel() {
             {itemsInSlide.map((card) => (
               <div className="card" style={{ width: "20rem" }} key={card.id}>
                 <img
-                  src={`http://localhost:8000/${card.productImage}`}
+                  src={`https://backend1-api.vercel.app/${card.productImage}`}
                   alt={card.title}
                 />
                 <div className="card-body">
